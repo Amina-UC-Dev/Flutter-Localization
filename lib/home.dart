@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
               myController.changeLanguage(val1: "en", val2: "US");
             }
           },
-          child: Text("change".tr),
+          child: Text("${"change_to".tr} ${Get.locale!.languageCode == "en" ? "arabic".tr : "english".tr}"),
         ),
       ),
     );
